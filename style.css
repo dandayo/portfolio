@@ -129,6 +129,10 @@ main{
     justify-content: space-evenly;
 }
 
+.card:hover {
+    border: solid 2.5px #6FFFE9;
+}
+
 .card img{
     height: 200px;
     width: 200px;
