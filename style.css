@@ -5,6 +5,7 @@
     color: aliceblue;
 }
 
+/* HEADER */
 
 header {
     display: flex;
@@ -54,6 +55,8 @@ a:hover{
     color: #6FFFE9;
 }
 
+/* INFO ABOUT ME */
+
 main{
     margin: auto;
     width: 80%;
@@ -76,13 +79,58 @@ main{
     padding-top: 20px;
 }
 
+/* PROJECTS */
+
 #projects{
-    height: calc(50vh - 0px)    
+    height: calc(70vh - 0px)    
 }
 
-#education{
-    height: calc(50vh - 100px)    
+.card-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
 }
+
+.card {
+    display: flex;
+    justify-items: center;
+    height: 500px;
+    width: 300px;
+    border: solid 1px #5BC0BE;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;   
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.card img{
+    height: 200px;
+    width: 200px;
+}
+
+.card h3 {
+    padding-top: 20px;
+    width: 280px;
+    border-top: solid 1px #5BC0BE;
+    padding-left: 20px;
+}
+
+.card p{
+    width: 280px;
+    height: max-content;
+    padding-left: 20px;
+}
+
+/* EDUCATION */
+
+#education{
+    margin-top: 50px;
+   
+}
+
+/* SKILLS */
 
 #skills {
     margin: auto;
@@ -122,6 +170,8 @@ main{
 #skills span{
     margin-top: 10px;
 }
+
+/* CONTACTS */
 
 #contact {
     height: calc(50vh - 200px);
@@ -172,6 +222,8 @@ main{
     margin-left: auto;
     padding-right: 20px;
 }
+
+/* FOOTER */
 
 footer{
     margin-top: 50px;
