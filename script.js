@@ -1,5 +1,5 @@
 // Script for count seconds
-const startDate = new Date('2020-08-08T00:00:00');
+const startDate = new Date('2019-08-08T00:00:00');
 
 function formatNumberWithCommas(number) {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
