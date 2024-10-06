@@ -51,7 +51,7 @@ header a {
 }
 
 a:hover{
-    color: #5BC0BE;
+    color: #6FFFE9;
 }
 
 main{
@@ -149,6 +149,10 @@ main{
 #contact a {
     color: #FF6B6B;
     text-decoration: none;
+}
+
+#contact a:hover{
+    color: #6FFFE9;
 }
 
 #contact li{
