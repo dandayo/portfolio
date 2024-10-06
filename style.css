@@ -55,12 +55,13 @@ a:hover{
     color: #6FFFE9;
 }
 
-/* INFO ABOUT ME */
-
 main{
     margin: auto;
     width: 80%;
 }
+
+/* INFO ABOUT ME */
+
 
 #info{
     display: flex;
@@ -75,8 +76,31 @@ main{
     font-size: 4ch;
 }
 
-#aboutme{
+#about-me {
     padding-top: 20px;
+    padding-bottom: 30px;
+    width: 1000px; 
+    position: relative;
+    overflow: hidden; 
+}
+
+#border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background-color: #5BC0BE; 
+    width: 0; 
+    animation: borderGrow 6s ease forwards; 
+}
+
+@keyframes borderGrow {
+    from {
+        width: 0; 
+    }
+    to {
+        width: 100%; 
+    }
 }
 
 /* PROJECTS */
