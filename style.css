@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    background-color: #0B132B;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+}
+
+
+header {
+    display: flex;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    width:(100% - 30px);
+    top: 0;
+    z-index: 1000;
+    background-color: #1C2541;
+}
+
+#open{
+    width: 60px; 
+    height: 60px;
+    padding-left: 48.4%;
+    background-color: #1C2541;
+}
+
+#open svg{
+    width: 60px; 
+    height: 60px;
+    fill: #5BC0BE;
+    background-color: #1C2541;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin-left: auto;
+    padding-right: 40px;
+    text-align: center;
+    background-color: #1C2541;
+}
+
+header li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+header a {
+    text-decoration: none;
+    background-color: #1C2541;
+}
+
+a:hover{
+    color: #5BC0BE;
+}
+
+main{
+    margin: auto;
+    width: 80%;
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: calc(100vh - 0px);
+    width: 70%;
+}
+
+#name{
+    font-size: 4ch;
+}
+
+#aboutme{
+    padding-top: 20px;
+}
+
+#projects{
+    height: calc(50vh - 0px)    
+}
+
+#education{
+    height: calc(50vh - 100px)    
+}
+
+#skills {
+    margin: auto;
+    height: calc(50vh - 200px)
+}
+
+#skills ul{
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+#skills li{
+    text-align: center;
+}
+
+#skills h2{
+    margin: 150px 0 50px;
+}
+
+#skills svg{
+    width: 80px; 
+    height: 80px;
+    fill: #5BC0BE;
+}
+
+#skills li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+#skills span{
+    margin-top: 10px;
+}
+
+#contact {
+    height: calc(50vh - 200px);
+}
+
+#contact h2{
+    margin: 50px 0;
+}
+
+#contact ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+#contact svg{
+    width: 30px;
+    height: 30px;
+    fill: #5BC0BE;
+}
+
+#contact a {
+    color: #FF6B6B;
+    text-decoration: none;
+}
+
+#contact li{
+    display: flex;
+    align-items: center;
+    border: solid 1px #5BC0BE;
+    border-radius: 16px;
+    margin-top: 30px;
+    gap: 10px;
+    padding: 10px;
+    width: 300px;
+    flex: 0 1 calc(40% - 20px); 
+    box-sizing: border-box; /
+}
+
+#contact p{
+    margin-left: auto;
+    padding-right: 20px;
+}
+
+footer{
+    margin-top: 50px;
+    height: 100px;
+    text-align: center;
+}
+
+footer svg{
+    margin: 20px;
+    width: 60px; 
+    height: 60px;
+    fill: #5BC0BE;
+}
