@@ -526,8 +526,8 @@ footer svg{
 }
 
 @media (max-width: 700px){
-    footer{
-        margin-top: 200px;
+    header{
+        width: 100%;
     }
 }
 
@@ -669,3 +669,10 @@ footer svg{
         font-size: x-small;
     }
 }
+
+@media (min-width: 200px) {
+    header{
+        width: 100%;
+    }
+}
+
