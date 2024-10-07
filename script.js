@@ -20,3 +20,15 @@ function updateSeconds() {
 
 updateSeconds();
 setInterval(updateSeconds, 1000);
+
+
+//Script for Navbar
+document.getElementById('menu-button').addEventListener('click', function () {
+    var navList = document.getElementById('nav-list');
+    
+    if (navList.classList.contains('open')) {
+        navList.classList.remove('open'); 
+    } else {
+        navList.classList.add('open'); 
+    }
+});
