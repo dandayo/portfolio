@@ -239,32 +239,57 @@ main{
     fill: #5BC0BE;
 }
 
-#contact a {
+#contact .visit {
     color: #FF6B6B;
-    text-decoration: none;
 }
 
 
-#contact a:hover{
-    color: #6FFFE9;
+#contact li:hover{
+    border: solid 2.5px #6FFFE9;
 }
 
 #contact li{
-    display: flex;
-    align-items: center;
+    width: 300px;
+    flex: 0 1 calc(40% - 20px); 
     border: solid 1px #5BC0BE;
     border-radius: 16px;
     margin-top: 30px;
     gap: 10px;
     padding: 10px;
-    width: 300px;
-    flex: 0 1 calc(40% - 20px); 
     box-sizing: border-box; 
+    
+}
+
+#contact a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
 }
 
 #contact p{
     margin-left: auto;
     padding-right: 20px;
+}
+
+/* SHOW NOTIFICATION ABOUT COPY */
+
+#fixedNotification{
+    display: none; 
+    position: fixed; 
+    width: 300px; 
+    left: 50%;
+    transform: translateX(-50%);
+    top:30px;
+    right: 0; 
+    background-color: #4CAF50; 
+    border-radius: 15px;
+    color: white; 
+    text-align: center; 
+    padding: 10px; 
+    font-size: 16px; 
+    z-index: 1000;
 }
 
 /* FOOTER */
@@ -544,25 +569,32 @@ footer svg{
     }
 
     #nav-list {
-        display: none; 
+        max-height: 0;
+        opacity: 0; 
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 90px;
         right: 0;
         background-color: #1C2541;
         padding: 20px;
         border-radius: 10px;
         z-index: 1000;
+        overflow: hidden; 
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out; 
+        display: flex;
+        align-items: center;
+        border:solid 1px #5BC0BE;
     }
-
+    
     #nav-list li {
         margin: 10px 0;
     }
-
+    
     #nav-list.open {
-        display: flex; 
+        max-height: 500px; 
+        opacity: 1;
     }
-
+    
     #menu-button {
         background-color: #5BC0BE;
         border: none;
