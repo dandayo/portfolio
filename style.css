@@ -532,7 +532,7 @@ footer svg{
 }
 
 
-@media (max-width: 430px){
+@media (max-width: 600px){
 
     main{
         max-width: 420;
@@ -619,6 +619,14 @@ footer svg{
     }
 
 }
+
+@media (max-width: 428px) {
+    #contact ul{
+        font-size: smaller;
+    }
+}
+
+
 
 @media (max-width: 375px) {
 
