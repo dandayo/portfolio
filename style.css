@@ -613,8 +613,8 @@ footer svg{
 
 
     footer {
-        margin-top: 60%;
-        width: 420px;
+        margin-top: 80%;
+        width: 90%;
         font-size: x-small;
     }
 
@@ -665,7 +665,7 @@ footer svg{
     }
 
     footer {
-        width: 365px;
+        width: 90%;
         font-size: x-small;
     }
 }
