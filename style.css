@@ -7,7 +7,9 @@
     background-color: #0B132B;
     font-family: 'Montserrat', sans-serif;
     color: aliceblue;
+    overflow-x: hidden;
 }
+
 
 /* HEADER */
 
@@ -257,7 +259,7 @@ main{
     gap: 10px;
     padding: 10px;
     box-sizing: border-box; 
-    
+    cursor: pointer;
 }
 
 #contact a{
@@ -519,6 +521,7 @@ footer svg{
             justify-items: center;
             height: 200px;
             width: 200px;
+            cursor: pointer;
         }
         
         .card::before {
