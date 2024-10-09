@@ -173,7 +173,7 @@ main{
 
 #skills {
     margin: auto;
-    height: calc(50vh - 200px)
+    height: calc(50vh)
 }
 
 #skills ul{
@@ -219,7 +219,7 @@ main{
 /* CONTACTS */
 
 #contact {
-    height: calc(50vh - 200px);
+    height: calc(50vh);
 }
 
 #contact h2{
@@ -297,9 +297,10 @@ main{
 /* FOOTER */
 
 footer{
-    margin-top: 50px;
+    margin-top: 90px;
     height: 100px;
     text-align: center;
+    height: auto;
 }
 
 footer svg{
@@ -336,7 +337,7 @@ footer svg{
     /* PROJECTS FOR TABLET */
 
     #projects{
-        height: calc(100vh - 50px)    
+        height: calc(100vh)    
     }
     
     .card-container{
@@ -383,7 +384,7 @@ footer svg{
     }
     
     footer{
-        margin-top: 200px;
+        margin-top: 100px;
         height: 100px;
         text-align: center;
     }
