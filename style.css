@@ -23,6 +23,7 @@ header {
     top: 0;
     z-index: 1000;
     background-color: #1C2541;
+
 }
 
 .mobile-only {
@@ -31,7 +32,7 @@ header {
 
 #open{
     width: 60px; 
-    height: 60px;
+    height: auto;
     padding-left: 48.4%;
     background-color: #1C2541;
 }
@@ -117,7 +118,7 @@ main{
 /* PROJECTS */
 
 #projects{
-    height: calc(70vh - 0px)    
+    height: auto;    
 }
 
 .card-container{
@@ -173,7 +174,7 @@ main{
 
 #skills {
     margin: auto;
-    height: calc(50vh)
+    height: auto;
 }
 
 #skills ul{
@@ -219,7 +220,7 @@ main{
 /* CONTACTS */
 
 #contact {
-    height: calc(50vh);
+    height: auto;
 }
 
 #contact h2{
@@ -297,8 +298,8 @@ main{
 /* FOOTER */
 
 footer{
-    margin-top: 90px;
-    height: 100px;
+    margin-top: 100px;
+    height: auto;
     text-align: center;
     height: auto;
 }
@@ -306,7 +307,7 @@ footer{
 footer svg{
     margin: 20px;
     width: 60px; 
-    height: 60px;
+    height: auto;
     fill: #5BC0BE;
 }
 
@@ -337,7 +338,7 @@ footer svg{
     /* PROJECTS FOR TABLET */
 
     #projects{
-        height: calc(100vh)    
+        height: auto;    
     }
     
     .card-container{
@@ -384,8 +385,7 @@ footer svg{
     }
     
     footer{
-        margin-top: 100px;
-        height: 100px;
+        height: auto;
         text-align: center;
     }
     
@@ -410,7 +410,7 @@ footer svg{
 
     #open{
         width: 60px; 
-        height: 60px;
+        height: auto;
         display: flex;
         padding: 10px;
     }
@@ -432,7 +432,7 @@ footer svg{
     /* PROJECTS */
 
         #projects{
-            height: calc(100vh - 50px)    
+            height: auto;   
         }
         
         .card-container{
@@ -469,7 +469,7 @@ footer svg{
 
         #skills {
             margin: auto;
-            height: calc(50vh - 100px);
+            height: auto;
         }
 
         #skills ul{
@@ -507,7 +507,7 @@ footer svg{
         /* PROJECTS */
 
         #projects{
-            height: calc(60vh - 50px)    
+            height: auto;    
         }
         
         .card-container{
@@ -547,11 +547,6 @@ footer svg{
             font-size: small;
             width: 180px;
         }
-    
-    footer{
-        margin-top: 250px;
-    }
-
 }
 
 @media (max-width: 700px){
@@ -630,7 +625,7 @@ footer svg{
     }
 
     #projects{
-        height: 120ch;
+        height: auto;
         width: 90%;
     }
 
@@ -642,6 +637,7 @@ footer svg{
 
     #contact{
         width: 90%;
+        height: auto;
     }
     #contact li{
         width: 90%;
@@ -649,7 +645,6 @@ footer svg{
 
 
     footer {
-        margin-top: 120%;
         width: 90%;
         font-size: x-small;
     }
@@ -686,13 +681,14 @@ footer svg{
     }
 
     #projects{
-        height: 120ch;
+        height: auto;
         width: 340px;
     }
 
     #skills{
         margin-top: 10px;
         width: 340px;
+        height: auto;
     }
 
     #contact{
