@@ -118,7 +118,7 @@ main{
 /* PROJECTS */
 
 #projects{
-    height: auto;    
+    height: 600px;    
 }
 
 .card-container{
@@ -220,7 +220,7 @@ main{
 /* CONTACTS */
 
 #contact {
-    height: auto;
+    height: 340px;
 }
 
 #contact h2{
@@ -228,7 +228,7 @@ main{
 }
 
 #contact ul{
-    padding: 0;
+    padding: 0; 
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -251,8 +251,13 @@ main{
     border: solid 2.5px #6FFFE9;
 }
 
+#contact li:active{
+    border: solid 2.5px #66ff84;
+}
+
 #contact li{
     width: 300px;
+    height: 75px;
     flex: 0 1 calc(40% - 20px); 
     border: solid 1px #5BC0BE;
     border-radius: 16px;
@@ -346,6 +351,7 @@ footer svg{
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+        height: 450px;
     }
     
     .card {
@@ -360,6 +366,7 @@ footer svg{
         align-content: center;
         justify-content: space-evenly;
         margin: 20px;
+        cursor: pointer;
     }
     
     .card::before {

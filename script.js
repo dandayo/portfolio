@@ -70,3 +70,7 @@ document.getElementById('copyPhone').addEventListener('click', function() {
     const phoneText = "+358 408558908";
     copyContacts(phoneText);
 });
+
+
+
+//Animation for cards
