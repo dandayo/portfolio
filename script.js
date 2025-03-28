@@ -72,5 +72,3 @@ document.getElementById('copyPhone').addEventListener('click', function() {
 });
 
 
-
-//Animation for cards

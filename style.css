@@ -134,33 +134,71 @@ main{
     width: 300px;
     border: solid 1px #5BC0BE;
     border-radius: 15px;
-    flex-wrap: wrap;
+    justify-content: flex-start;
     flex-direction: column;
-    align-items: center;   
-    align-content: center;
-    justify-content: space-evenly;
 }
 
-.card:hover {
-    border: solid 2.5px #6FFFE9;
+.card img:hover {
+    filter: opacity(80%);
 }
 
 .card img{
-    height: 200px;
-    width: 200px;
+    width: auto;
+    height: 199px;
+    filter: opacity(40%);
+    border-bottom: solid 1px #5BC0BE; 
+    overflow: hidden;
+}
+
+.projects-info{
+    display: flex;
+    flex-direction: column;
+    height: 299px;
+    justify-content: space-evenly;
 }
 
 .card h3 {
     padding-top: 20px;
-    width: 280px;
-    border-top: solid 1px #5BC0BE;
-    padding-left: 20px;
+    width: 250px;
+    padding: 15px;
 }
 
 .card p{
-    width: 280px;
+    width: 270px;
     height: max-content;
-    padding-left: 20px;
+    padding: 15px;
+    height: 200px;
+}
+
+.links-to-gifi {
+    display: flex;
+}
+
+.links-to-gifi p {
+    color: #FF6B6B;
+    padding: 10px 15px 5px;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.links-to-gifi a{
+    text-decoration: none;
+}
+
+.links-to-gifi a p:hover{
+    color: #6FFFE9;
+}
+
+.stack{
+    display: flex;
+    padding: 15px;
+    height: 50px !important;
+    align-items: center
+}
+
+.stack li{
+    padding-right: 10px;
+    color: #6FFFE9;
 }
 
 /* EDUCATION */
