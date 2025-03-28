@@ -129,13 +129,13 @@ main{
 
 .card {
     display: flex;
-    justify-items: center;
-    height: 500px;
-    width: 300px;
+    flex-direction: column;
     border: solid 1px #5BC0BE;
     border-radius: 15px;
-    justify-content: flex-start;
-    flex-direction: column;
+    overflow: hidden;
+    width: 300px;
+    height: 500px;
+    transition: all 0.3s ease;
 }
 
 .card img:hover {
@@ -154,31 +154,34 @@ main{
     display: flex;
     flex-direction: column;
     height: 299px;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 15px;
 }
 
 .card h3 {
-    padding-top: 20px;
-    width: 250px;
-    padding: 15px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
-.card p{
-    width: 270px;
-    height: max-content;
-    padding: 15px;
-    height: 200px;
+.card p {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 10px 0;
+    flex-grow: 1;
 }
 
 .links-to-gifi {
     display: flex;
+    margin-top: auto;
 }
 
 .links-to-gifi p {
+    padding: 5px 15px;
+    width: auto !important;
+    height: auto !important;
     color: #FF6B6B;
-    padding: 10px 15px 5px;
-    width: 50px !important;
-    height: 50px !important;
 }
 
 .links-to-gifi a{
@@ -190,9 +193,10 @@ main{
 }
 
 .stack{
+    padding: 0;
+    height: auto !important;
+    margin-top: 10px;
     display: flex;
-    padding: 15px;
-    height: 50px !important;
     align-items: center
 }
 
@@ -364,8 +368,9 @@ footer svg{
     }
 
     main{
+        width: 90%;
         max-width: 1280px;
-        width: 80%;
+        margin: 0 auto;
     }
     header{
         display: flex;
@@ -393,18 +398,9 @@ footer svg{
     }
     
     .card {
-        justify-items: center;
-        height: 400px;
-        width: 400px;
-        border: solid 1px #5BC0BE;
-        border-radius: 15px;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;   
-        align-content: center;
-        justify-content: space-evenly;
-        margin: 20px;
-        cursor: pointer;
+        width: calc(50% - 30px);
+        min-width: 300px;
+        max-width: 400px;
     }
     
     .card::before {
@@ -563,11 +559,8 @@ footer svg{
         }
         
         .card {
-            display: flex;
-            justify-items: center;
-            height: 200px;
-            width: 200px;
-            cursor: pointer;
+            height: auto;
+            min-height: 400px;
         }
         
         .card::before {
@@ -575,8 +568,9 @@ footer svg{
         }
         
         .card img{
-            height: 90px;
-            width: 90px;
+            height: 150px;
+            width: 100%;
+            object-fit: cover;
         }
 
         .card h3 {
@@ -592,6 +586,15 @@ footer svg{
             font-size: small;
             width: 180px;
         }
+
+        #skills ul {
+            gap: 20px;
+            justify-content: center;
+        }
+
+        #skills li {
+            flex: 0 1 calc(33.33% - 20px);
+        }
 }
 
 @media (max-width: 700px){
@@ -604,7 +607,7 @@ footer svg{
 @media (max-width: 600px){
 
     main{
-        max-width: 420;
+        width: 95%;
     }
 
     .mobile-only{
@@ -654,7 +657,7 @@ footer svg{
         width: 100%;
         display: flex;
         justify-content: space-between;
-        padding: 0;
+        padding: 15px;
     }
 
     main {
@@ -685,7 +688,7 @@ footer svg{
         height: auto;
     }
     #contact li{
-        width: 90%;
+        width: 100%;
     }
 
 
@@ -694,68 +697,5 @@ footer svg{
         font-size: x-small;
     }
 
-}
-
-@media (max-width: 428px) {
-    #contact ul{
-        font-size: smaller;
-    }
-}
-
-
-
-@media (max-width: 375px) {
-
-    main {
-        width: 370px; 
-        font-size: small;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding: 0;
-    }
-
-    header ul{
-        margin:0;
-    }
-
-    #projects{
-        height: auto;
-        width: 340px;
-    }
-
-    #skills{
-        margin-top: 10px;
-        width: 340px;
-        height: auto;
-    }
-
-    #contact{
-        width: 340px;
-    }
-    #contact li{
-        width: 330px;
-    }
-
-    #contact ul{
-        margin-top: -50px;
-    }
-
-    footer {
-        width: 90%;
-        font-size: x-small;
-    }
-}
-
-@media (min-width: 200px) {
-    header{
-        width: 100%;
-    }
 }
 
