@@ -653,10 +653,27 @@ footer svg{
 
 @media (max-width: 600px){
 
+    header{
+        display: flex;
+        width: 100vw;
+        justify-content: space-around;
+    }
+
     main{
         width: 95%;
     }
 
+    #nav-list{
+        width: 100px; 
+        height: 160px;
+        padding: 10px;
+        margin-top: 10%;
+        margin-right: 9%;
+    }
+
+    #nav-list li{
+        background-color: #1c2541;
+    }
 
 
     .mobile-only{
@@ -701,14 +718,6 @@ footer svg{
         border-radius: 5px;
         margin-right: 10px;
     }
-
-    header{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding: 15px;
-    }
-
     main {
         width: 90%; 
         font-size: small;
